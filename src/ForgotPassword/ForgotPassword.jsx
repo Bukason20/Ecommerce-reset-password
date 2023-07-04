@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from "./forgotPassword.module.css"
 import Logo from "../images/logo.png"
 
+
 function ForgotPassword() {
     const [email, setEmail] = useState("")
     const [loading, setLoading] = useState(false)
@@ -30,6 +31,7 @@ function ForgotPassword() {
     }
   return (
     <div className = {styles.Container}>
+      <div className= {styles.overlay}></div>
       <div className= {styles.logo}>
         <img src= {Logo} alt=""/>
       </div>
