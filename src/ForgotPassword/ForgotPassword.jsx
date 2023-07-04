@@ -42,7 +42,11 @@ function ForgotPassword() {
               <input type="email" name="" id="" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             
-            <button type='submit' className = {styles.btn}>Reset password</button>
+            <button type='submit' className = {styles.btn}>
+              {loading && "Loading..."}
+              {!loading && "Reset Password"}
+            
+            </button>
             <div className= {styles.enquiries}>
               <p>For further support, kindly visit our help center or contact our customer service team.</p>
             </div>
